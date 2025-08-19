@@ -1,17 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Enlace al archivo CSS -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>
-        Hola Mundo
-    </h1>
-</body>
-</html>
 
-<!--pedro pascal-->
+{% block titulo %}
+    Gimnasio Code Fit | Transforma tu cuerpo <!-- Título SEO y para pestaña del navegador -->
+{% endblock %}
+
+<!-- Bloque de contenido principal -->
+{% block content %}
+    <!-- ========= HERO BANNER (PORTADA) ========= -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>prueba 1 </h1> <!-- Titular principal -->
+            <p>no se que poner </p> <!-- Subtítulo -->
+            <a href="/register" class="cta-button">xxdxdxdxdxdxdxdxdxdxdxdxdxddxd</a> <!-- Botón CTA (Call to Action) -->
+        </div>
+    
+    </section>
+    
+
+    <!-- ========= SECCIÓN DE CARACTERÍSTICAS ========= -->
+    <section class="features">
+        <!-- Tarjeta 1: Entrenadores -->
+        <div class="feature-card fade-in">
+            <img src="/static/Imagen pegada.png" alt="Icono de entrenador"> <!-- Icono descriptivo -->
+            <h3>ENTRENADORES CERTIFICADOS</h3> <!-- Título característica -->
+            <p>Nuestro equipo de profesionales te guiará en cada paso.</p> <!-- Descripción -->
+        </div>
+        
+        <!-- Tarjeta 2: Equipamiento -->
+        <div class="feature-card fade-in delay-1">
+            <img src="/static/Imagen pegada (2).png" alt="Icono de equipamiento">
+            <h3>EQUIPO DE ÚLTIMA GENERACIÓN</h3>
+            <p>Tecnología de punta para maximizar tus resultados.</p>
+        </div>
+        
+        <!-- Tarjeta 3: Clases -->
+        <div class="feature-card fade-in delay-2">
+            <img src="/static/Imagen pegada (3).png" alt="Icono de clases grupales">
+            <h3>+50 CLASES SEMANALES</h3>
+            <p>Desde yoga hasta HIIT, tenemos algo para todos.</p>
+        </div>
+        <!--
+          Requiere: icon1.png, icon2.png, icon3.png en static/img/
+          Tamaño recomendado: 80x80px (iconos en formato PNG transparente)
+        -->
+    </section>
+
+    <!-- ========= SECCIÓN "SOBRE NOSOTROS" ========= -->
+    <section class="about">
+        <!-- Contenido textual -->
+        <div class="about-content">
+            <h2>SOBRE NOSOTROS</h2> <!-- Título sección -->
+            <p>Code Fit es más que un gimnasio, es una comunidad de personas apasionadas por el fitness y la vida saludable. Fundado en 2020, nuestro objetivo es ayudar a nuestros miembros a alcanzar sus metas físicas en un ambiente motivador y profesional.</p>
+            <p>Nuestras instalaciones de 2000m² cuentan con áreas especializadas para entrenamiento funcional, pesas, cardio y recuperación.</p>
+            <a href="#precios" class="secondary-button">VER PLANES</a> <!-- Botón secundario -->
+        </div>
+        
+        <!-- Imagen complementaria -->
+        <div class="about-image">
+            <img src="/static/Imagen pegada (4).png" alt="Instalaciones del gimnasio Code Fit">
+            <!-- 
+              Requiere: about-us.jpg en static/img/
+              Recomendado: Imagen de las instalaciones (1200x800px)
+            -->
+        </div>
+    </section>
+
+    <!-- ========= SECCIÓN DE TESTIMONIOS ========= -->
+    <section class="testimonials">
+        <h2>esto solo es una prueba mas </h2> <!-- Título sección -->
+        
+        <!-- Tarjeta de testimonio 1 -->
+        <div class="testimonial-card fade-in">
+            <img src="/static/Imagen pegada (5).png" alt="Foto de María G." class="client-photo"> <!-- Foto cliente -->
+            <blockquote>"En solo 3 meses he logrado resultados que no conseguí en años en otros gimnasios. Los entrenadores son increíbles!"</blockquote> <!-- Cita textual -->
+            <h4>María G.</h4> <!-- Nombre cliente -->
+            <div class="rating" aria-label="5 estrellas">★★★★★</div> <!-- Valoración -->
+        </div>
+        
+        <!-- Espacio para más testimonios -->
+        <!-- 
+          Requiere: client1.jpg, client2.jpg, etc. en static/img/
+          Formato: Fotos cuadradas (150x150px) de clientes reales/simulados
+        -->
+    </section>
+{% endblock %}
